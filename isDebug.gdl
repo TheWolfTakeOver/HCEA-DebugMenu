@@ -1,0 +1,409 @@
+graph: {
+title: "Graph of sub_82453628"
+manhattan_edges: yes
+layoutalgorithm: mindepth
+finetuning: no
+layout_downfactor: 100
+layout_upfactor: 0
+layout_nearfactor: 0
+xlspace: 12
+yspace: 30
+// IDA palette
+colorentry 32: 0 0 0
+colorentry 33: 170 170 170
+colorentry 34: 255 197 243
+colorentry 35: 130 96 126
+colorentry 36: 102 102 102
+colorentry 37: 255 255 255
+colorentry 38: 235 235 185
+colorentry 39: 235 235 185
+colorentry 40: 255 236 187
+colorentry 41: 192 192 192
+colorentry 42: 105 210 0
+colorentry 43: 0 255 0
+colorentry 44: 210 80 50
+colorentry 45: 255 70 70
+colorentry 46: 255 170 127
+colorentry 47: 124 124 97
+colorentry 48: 210 80 50
+colorentry 49: 128 128 0
+colorentry 50: 255 52 55
+colorentry 51: 192 192 192
+colorentry 52: 89 89 89
+colorentry 53: 255 197 243
+colorentry 54: 255 170 255
+colorentry 55: 255 210 0
+colorentry 56: 0 255 255
+colorentry 57: 255 128 0
+colorentry 58: 255 210 0
+colorentry 59: 157 214 0
+colorentry 60: 223 7 126
+colorentry 61: 105 210 0
+colorentry 62: 121 243 0
+colorentry 63: 210 80 50
+colorentry 64: 171 171 171
+colorentry 65: 115 173 173
+colorentry 66: 255 90 253
+colorentry 67: 255 255 127
+colorentry 68: 170 255 0
+colorentry 69: 255 210 0
+colorentry 70: 255 170 255
+colorentry 71: 255 255 0
+colorentry 72: 0 0 0
+colorentry 73: 45 45 45
+colorentry 74: 225 173 50
+colorentry 75: 0 255 255
+colorentry 76: 102 102 102
+colorentry 77: 170 0 0
+colorentry 78: 124 124 97
+colorentry 79: 157 157 0
+colorentry 80: 255 85 255
+colorentry 81: 255 136 0
+colorentry 82: 255 170 0
+colorentry 83: 0 0 0
+colorentry 84: 50 205 50
+node: { title: "0" label: "58sub_8245362831:
+mflr      r12
+bl        __savegprlr_23
+stwu      r1, back_chain(r1)
+lis       r11, dword_83600E78@ha
+mr        r30, r5
+mr        r5, r4
+addi      r3, r1, 0xF0+var_90
+mr        r26, r4
+lwz       r4, dword_83600E78@l(r11)
+mr        r31, r6
+bl        sub_822FBF78
+addi      r3, r1, 0xF0+var_98
+bl        sub_825199C0
+addi      r3, r1, 0xF0+var_94
+bl        sub_825199C0
+lwz       r9, 0xF0+var_90(r1)
+lis       r10, aControlsInput@ha
+addi      r5, r1, 0xF0+var_98
+addi      r4, r10, aControlsInput@l# \"Controls.input\"
+lwz       r3, 0(r9)
+bl        sub_82452698
+clrlwi    r8, r3, 24
+addi      r3, r1, 0xF0+var_94
+cmplwi    cr6, r8, 0
+beq       cr6, loc_82453A94" vertical_order: 0 }
+node: { title: "1" label: "addi      r4, r1, 0xF0+var_98
+bl        sub_822FA588
+cmplwi    cr6, r31, 0
+beq       cr6, loc_824536B0" }
+node: { title: "2" label: "lwz       r11, 0xF0+var_90(r1)
+addi      r5, r1, 0xF0+var_94
+mr        r4, r31
+lwz       r3, 0(r11)
+bl        sub_82452698" }
+node: { title: "3" label: "li        r31, 0
+lwz       r5, 0(r30)
+li        r4, 0
+lwz       r6, 4(r30)
+stw       r31, 0xF0+var_60(r1)
+addi      r3, r1, 0xF0+var_60
+stw       r31, 0xF0+var_5C(r1)
+stw       r31, 0xF0+var_58(r1)
+bl        sub_82963C00
+lis       r29, dword_8355A290@ha
+lis       r11, unk_8358763C@ha
+addi      r7, r1, 0xF0+var_60
+addi      r5, r11, unk_8358763C@l
+addi      r6, r1, 0xF0+var_94
+addi      r3, r1, 0xF0+var_9C
+lwz       r4, dword_8355A290@l(r29)
+bl        sub_82439D20
+lis       r28, off_83432F18@ha
+addi      r5, r1, 0xF0+var_9C
+addi      r4, r1, 0xF0+var_88
+lwz       r3, off_83432F18@l(r28)# off_83437DA8
+stw       r3, 0xF0+var_84(r1)
+lwz       r10, (off_83437DA8 - 0x83437DA8)(r3)# const ds_data::dsDATA_TYPE_IMPL<ds_data::REF_TYPE<gsiCONTEXT>>::`vftable'
+lwz       r9, (off_82002BCC - 0x82002BC4)(r10)# sub_82481F80
+mtctr     r9
+bctrl# sub_82481F80
+lis       r8, dword_8358762C@ha
+lis       r27, dword_835876E0@ha
+lwz       r5, dword_8358762C@l(r8)
+addi      r6, r1, 0xF0+var_88
+mr        r4, r26
+lwz       r3, dword_835876E0@l(r27)
+bl        sub_82455EE8
+lwz       r3, 0xF0+var_84(r1)
+cmplwi    cr6, r3, 0
+beq       cr6, loc_82453754" }
+node: { title: "4" label: "lwz       r11, 0(r3)
+addi      r4, r1, 0xF0+var_88
+lwz       r10, 0xC(r11)
+mtctr     r10
+bctrl" }
+node: { title: "5" label: "stw       r31, 0xF0+var_60(r1)
+li        r4, 0
+stw       r31, 0xF0+var_5C(r1)
+addi      r3, r1, 0xF0+var_60
+stw       r31, 0xF0+var_58(r1)
+lwz       r6, 4(r30)
+lwz       r5, 0(r30)
+bl        sub_82963C00
+lis       r11, unk_83587634@ha
+addi      r7, r1, 0xF0+var_60
+lwz       r4, dword_8355A290@l(r29)
+addi      r5, r11, unk_83587634@l
+addi      r6, r1, 0xF0+var_98
+addi      r3, r1, 0xF0+var_8C
+bl        sub_82439D20
+mr        r4, r3
+addi      r3, r1, 0xF0+var_9C
+bl        sub_823167F8
+addi      r3, r1, 0xF0+var_8C
+bl        sub_82327678
+lwz       r3, off_83432F18@l(r28)# off_83437DA8
+addi      r5, r1, 0xF0+var_9C
+addi      r4, r1, 0xF0+var_80
+stw       r3, 0xF0+var_7C(r1)
+lwz       r10, (off_83437DA8 - 0x83437DA8)(r3)# const ds_data::dsDATA_TYPE_IMPL<ds_data::REF_TYPE<gsiCONTEXT>>::`vftable'
+lwz       r9, (off_82002BCC - 0x82002BC4)(r10)# sub_82481F80
+mtctr     r9
+bctrl# sub_82481F80
+lis       r8, dword_83587644@ha
+addi      r6, r1, 0xF0+var_80
+lwz       r3, dword_835876E0@l(r27)
+mr        r4, r26
+lwz       r5, dword_83587644@l(r8)
+bl        sub_82455EE8
+lwz       r3, 0xF0+var_7C(r1)
+cmplwi    cr6, r3, 0
+beq       cr6, loc_824537FC" }
+node: { title: "6" label: "lwz       r11, 0(r3)
+addi      r4, r1, 0xF0+var_80
+lwz       r10, 0xC(r11)
+mtctr     r10
+bctrl" }
+node: { title: "7" label: "stw       r31, 0xF0+var_60(r1)
+li        r4, 0
+stw       r31, 0xF0+var_5C(r1)
+addi      r3, r1, 0xF0+var_60
+stw       r31, 0xF0+var_58(r1)
+lwz       r6, 4(r30)
+lwz       r5, 0(r30)
+bl        sub_82963C00
+lis       r11, unk_83587638@ha
+addi      r7, r1, 0xF0+var_60
+lwz       r4, dword_8355A290@l(r29)
+addi      r5, r11, unk_83587638@l
+addi      r6, r1, 0xF0+var_98
+addi      r3, r1, 0xF0+var_8C
+bl        sub_82439D20
+mr        r4, r3
+addi      r3, r1, 0xF0+var_9C
+bl        sub_823167F8
+addi      r3, r1, 0xF0+var_8C
+bl        sub_82327678
+lwz       r3, off_83432F18@l(r28)# off_83437DA8
+addi      r5, r1, 0xF0+var_9C
+addi      r4, r1, 0xF0+var_78
+stw       r3, 0xF0+var_74(r1)
+lwz       r10, (off_83437DA8 - 0x83437DA8)(r3)# const ds_data::dsDATA_TYPE_IMPL<ds_data::REF_TYPE<gsiCONTEXT>>::`vftable'
+lwz       r9, (off_82002BCC - 0x82002BC4)(r10)# sub_82481F80
+mtctr     r9
+bctrl# sub_82481F80
+lis       r8, dword_83587628@ha
+addi      r6, r1, 0xF0+var_78
+lwz       r3, dword_835876E0@l(r27)
+mr        r4, r26
+lwz       r5, dword_83587628@l(r8)
+bl        sub_82455EE8
+lwz       r3, 0xF0+var_74(r1)
+cmplwi    cr6, r3, 0
+beq       cr6, loc_824538A4" }
+node: { title: "8" label: "lwz       r11, 0(r3)
+addi      r4, r1, 0xF0+var_78
+lwz       r10, 0xC(r11)
+mtctr     r10
+bctrl" }
+node: { title: "9" label: "stw       r31, 0xF0+var_60(r1)
+li        r4, 0
+stw       r31, 0xF0+var_5C(r1)
+addi      r3, r1, 0xF0+var_60
+stw       r31, 0xF0+var_58(r1)
+lwz       r6, 4(r30)
+lwz       r5, 0(r30)
+bl        sub_82963C00
+lis       r11, unk_83587614@ha
+addi      r7, r1, 0xF0+var_60
+lwz       r4, dword_8355A290@l(r29)
+addi      r5, r11, unk_83587614@l
+addi      r6, r1, 0xF0+var_98
+addi      r3, r1, 0xF0+var_8C
+bl        sub_82439D20
+mr        r4, r3
+addi      r3, r1, 0xF0+var_9C
+bl        sub_823167F8
+addi      r3, r1, 0xF0+var_8C
+bl        sub_82327678
+lwz       r3, off_83432F18@l(r28)# off_83437DA8
+addi      r5, r1, 0xF0+var_9C
+addi      r4, r1, 0xF0+var_70
+stw       r3, 0xF0+var_6C(r1)
+lwz       r10, (off_83437DA8 - 0x83437DA8)(r3)# const ds_data::dsDATA_TYPE_IMPL<ds_data::REF_TYPE<gsiCONTEXT>>::`vftable'
+lwz       r9, (off_82002BCC - 0x82002BC4)(r10)# sub_82481F80
+mtctr     r9
+bctrl# sub_82481F80
+lis       r8, dword_83587620@ha
+lwz       r3, dword_835876E0@l(r27)
+addi      r6, r1, 0xF0+var_70
+mr        r4, r26
+lwz       r5, dword_83587620@l(r8)
+bl        sub_82455EE8
+lwz       r3, 0xF0+var_6C(r1)
+cmplwi    cr6, r3, 0
+beq       cr6, loc_8245394C" }
+node: { title: "10" label: "lwz       r11, 0(r3)
+addi      r4, r1, 0xF0+var_70
+lwz       r10, 0xC(r11)
+mtctr     r10
+bctrl" }
+node: { title: "11" label: "lis       r10, dword_83587684@ha
+stb       r31, 0xF0+var_A0(r1)
+lis       r23, dword_83600CB4@ha
+lis       r24, dword_83587680@ha
+lwz       r11, dword_83587684@l(r10)
+clrlwi    r9, r11, 31
+cmplwi    cr6, r9, 0
+bne       cr6, loc_824539AC" }
+node: { title: "12" label: "ori       r11, r11, 1
+lwz       r25, dword_83600CB4@l(r23)
+lis       r9, aIsdebugmode@ha
+stw       r11, dword_83587684@l(r10)
+li        r5, 1
+addi      r4, r9, aIsdebugmode@l# \"IsDebugMode\"
+addi      r3, r1, 0xF0+var_8C
+bl        sub_822FBAA0
+mr        r8, r3
+li        r5, 0
+mr        r3, r25
+lwz       r4, 0(r8)
+bl        sub_8245D160
+mr        r4, r3
+stw       r3, dword_83587680@l(r24)
+b         loc_824539B0" }
+node: { title: "13" label: "lwz       r4, dword_83587680@l(r24)" }
+node: { title: "14" label: "lwz       r3, dword_83600CB4@l(r23)
+bl        sub_822F7428
+li        r5, 1
+addi      r4, r1, 0xF0+var_A0
+bl        sub_822F6F38
+lbz       r10, 0xF0+var_A0(r1)
+cmplwi    cr6, r10, 0
+beq       cr6, loc_824539E0" }
+node: { title: "15" label: "lwz       r11, 0xF0+var_9C(r1)
+li        r4, 1
+lwz       r3, 0(r11)
+bl        sub_82435008" }
+node: { title: "16" label: "stw       r31, 0xF0+var_60(r1)
+li        r4, 0
+stw       r31, 0xF0+var_5C(r1)
+addi      r3, r1, 0xF0+var_60
+stw       r31, 0xF0+var_58(r1)
+lwz       r6, 4(r30)
+lwz       r5, 0(r30)
+bl        sub_82963C00
+lis       r11, unk_83587624@ha
+addi      r7, r1, 0xF0+var_60
+lwz       r4, dword_8355A290@l(r29)
+addi      r5, r11, unk_83587624@l
+addi      r6, r1, 0xF0+var_98
+addi      r3, r1, 0xF0+var_8C
+bl        sub_82439D20
+mr        r4, r3
+addi      r3, r1, 0xF0+var_9C
+bl        sub_823167F8
+addi      r3, r1, 0xF0+var_8C
+bl        sub_82327678
+lwz       r3, off_83432F18@l(r28)# off_83437DA8
+addi      r5, r1, 0xF0+var_9C
+addi      r4, r1, 0xF0+var_68
+stw       r3, 0xF0+var_64(r1)
+lwz       r10, (off_83437DA8 - 0x83437DA8)(r3)# const ds_data::dsDATA_TYPE_IMPL<ds_data::REF_TYPE<gsiCONTEXT>>::`vftable'
+lwz       r9, (off_82002BCC - 0x82002BC4)(r10)# sub_82481F80
+mtctr     r9
+bctrl# sub_82481F80
+lis       r8, dword_8358760C@ha
+lwz       r3, dword_835876E0@l(r27)
+addi      r6, r1, 0xF0+var_68
+mr        r4, r26
+lwz       r5, dword_8358760C@l(r8)
+bl        sub_82455EE8
+lwz       r3, 0xF0+var_64(r1)
+cmplwi    cr6, r3, 0
+beq       cr6, loc_82453A88" }
+node: { title: "17" label: "lwz       r11, 0(r3)
+addi      r4, r1, 0xF0+var_68
+lwz       r10, 0xC(r11)
+mtctr     r10
+bctrl" }
+node: { title: "18" label: "addi      r3, r1, 0xF0+var_9C
+bl        sub_82327678
+addi      r3, r1, 0xF0+var_94" }
+node: { title: "19" label: "bl        sub_822FC410
+addi      r3, r1, 0xF0+var_98
+bl        sub_822FC410
+addi      r3, r1, 0xF0+var_90
+bl        sub_8282E570
+lwz       r3, 0(r30)
+bl        sub_823D69E8
+addi      r1, r1, 0xF0
+b         __restgprlr_23" }
+node: { title: "20" label: "__restgprlr_23" vertical_order: 21 color: red }
+// node 0
+edge: { sourcename: "0" targetname: "1" label: "false" color: red }
+edge: { sourcename: "0" targetname: "19" label: "true" color: darkgreen }
+// node 1
+edge: { sourcename: "1" targetname: "2" label: "false" color: red }
+edge: { sourcename: "1" targetname: "3" label: "true" color: darkgreen }
+// node 2
+edge: { sourcename: "2" targetname: "3" }
+// node 3
+edge: { sourcename: "3" targetname: "4" label: "false" color: red }
+edge: { sourcename: "3" targetname: "5" label: "true" color: darkgreen }
+// node 4
+edge: { sourcename: "4" targetname: "5" }
+// node 5
+edge: { sourcename: "5" targetname: "6" label: "false" color: red }
+edge: { sourcename: "5" targetname: "7" label: "true" color: darkgreen }
+// node 6
+edge: { sourcename: "6" targetname: "7" }
+// node 7
+edge: { sourcename: "7" targetname: "8" label: "false" color: red }
+edge: { sourcename: "7" targetname: "9" label: "true" color: darkgreen }
+// node 8
+edge: { sourcename: "8" targetname: "9" }
+// node 9
+edge: { sourcename: "9" targetname: "10" label: "false" color: red }
+edge: { sourcename: "9" targetname: "11" label: "true" color: darkgreen }
+// node 10
+edge: { sourcename: "10" targetname: "11" }
+// node 11
+edge: { sourcename: "11" targetname: "12" label: "false" color: red }
+edge: { sourcename: "11" targetname: "13" label: "true" color: darkgreen }
+// node 12
+edge: { sourcename: "12" targetname: "14" }
+// node 13
+edge: { sourcename: "13" targetname: "14" }
+// node 14
+edge: { sourcename: "14" targetname: "15" label: "false" color: red }
+edge: { sourcename: "14" targetname: "16" label: "true" color: darkgreen }
+// node 15
+edge: { sourcename: "15" targetname: "16" }
+// node 16
+edge: { sourcename: "16" targetname: "17" label: "false" color: red }
+edge: { sourcename: "16" targetname: "18" label: "true" color: darkgreen }
+// node 17
+edge: { sourcename: "17" targetname: "18" }
+// node 18
+edge: { sourcename: "18" targetname: "19" }
+// node 19
+edge: { sourcename: "19" targetname: "20" }
+// node 20
+}
